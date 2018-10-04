@@ -2,7 +2,8 @@
     "SETUP": {
         "index": {
             "header": [
-                "header/h-7"
+                "header/h-1",
+                "header/h-2"
             ],
             "body": [
                 "banner/b-1",
