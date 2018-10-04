@@ -1,0 +1,15 @@
+{
+    "SETUP": {
+        "index": {
+            "header": [
+                "header/h-7"
+            ],
+            "body": [
+                "banner/b-1",
+                "breadcrumb/b-1",
+                "nav/n-2",
+                "form/f-1"
+            ]
+        }
+    }
+}
