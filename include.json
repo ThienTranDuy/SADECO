@@ -6,9 +6,12 @@
                 "header/h-2"
             ],
             "body": [
+				"index/i-1",
+				"index/i-2",
                 "banner/b-1",
                 "breadcrumb/b-1",
-                "nav/n-2",
+				"nav/n-2",
+				"index/i-1",
                 "form/f-1"
             ]
         }

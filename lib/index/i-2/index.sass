@@ -1,0 +1,51 @@
+@import ../../_includes
+.canhcam-index-2
+	+mrc-padding
+	text-align: center
+	color: color-get($mau, den-1)
+	h2, h4, a
+		+fw(bold)
+		text-transform: uppercase
+	h2
+		+fz(1.5rem)
+		+lh(1.5)
+		+media-breakpoint-up(lg)
+			+fz(r(20px))
+			+lh(r(40px))
+			margin-bottom: 1rem
+	h3
+		+fw(200)
+		+fz(1.7rem)
+		margin-bottom: 1rem
+		+media-breakpoint-up(lg)
+			+fz(r(40px))
+			margin-bottom: 2rem
+	h4
+		+fz(r(20px))
+		+lh(r(50px))
+	p
+		+fw(400)
+		+fz(r(15px))
+		+lh(r(26px))
+		color: color-get($mau, den-2)
+	a
+		+fw(500)
+		+fz(r(16px))
+		+bor-rad(4px)
+		+pad(r(15px) r(36px) r(13px) r(36px))
+		color: color-get($mau, trang)
+		background: color-get($mau, extra)
+	.item
+		+mar(1.5rem null 2rem)
+		figure
+			img
+				+bor-rad(50%)
+				width: 15rem
+				height: 15rem
+				margin: auto
+			figcaption
+				+mar(.5rem null 1.5rem)
+				p
+					display: -webkit-box
+					-webkit-line-clamp: 4
+					-webkit-box-orient: vertical 
