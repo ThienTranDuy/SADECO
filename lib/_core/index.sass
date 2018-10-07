@@ -1,5 +1,6 @@
 @import ../_includes
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700i,800i,900i')
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700i,800i,900i')
+@import url('https://fonts.googleapis.com/css?family=Montserrat')
 // +font-face('CenturyGothic', "../fonts/", "CenturyGothic")
 
 html, body
@@ -11,7 +12,8 @@ html, body
 	+selection
 		background-color: color-get($mau,main)
 		color: #fff
-
+h2, h3, h4, p
+	color: color-get($mau, den-1)
 h1, h2, h3, h4, h5, h6
 	font-size: initial
 

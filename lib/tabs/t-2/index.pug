@@ -1,0 +1,38 @@
+.canhcam-index-tabs-2
+	.container
+		.row
+			.col
+				ul#ccTabs.nav.nav-tabs(role="tablist")
+					li.nav-item
+						a#cct-01-tab.nav-link.active(data-toggle="tab" href="#cct-01" role="tab" aria-controls="cct-01" aria-selected="true") Sắp triểnt khai
+					li.nav-item
+						a#cct-02-tab.nav-link(data-toggle="tab" href="#cct-02" role="tab" aria-controls="cct-02" aria-selected="false") Đang mở bán
+					li.nav-item
+						a#cct-03-tab.nav-link(data-toggle="tab" href="#cct-03" role="tab" aria-controls="cct-03" aria-selected="false") Đã thực hiện
+				#ccTabsContent.tab-content
+					#cct-01.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="cct-01-tab")
+						.row.no-gutters
+							.col-lg-3
+								.text
+									h3 Dự án các ông lớn
+									p Khu Biệt Thự Sông Ông Lớn là một trong những dự án tiêu biểu của Sadeco được quy hoạch trên diện tích 4,9ha với mật độ xây dựng chỉ 25%, có vị trí rất đắc địa nằm trên đại lộ Nguyễn Văn Linh, cùng với hệ thống giao thông thuận lợi, chỉ mất 5 phút đến Phú Mỹ Hưng và 10 phút để đến trung tâm thành phố.
+									p Dự án là quần thể biệt thự cao cấp sang trọng với kiến trúc đồng bộ của một màu ngói xanh tươi, được bảo bọc xung quanh bởi dòng sông Ông Lớn hiền hòa, lãng mạn.
+							.col-lg-9
+								.row.no-gutters
+									-for(i=1;i<3;i++)
+										.col-md-6
+											a.item(href="javascript:void(0)")
+												figure
+													.box
+														img(src="./img/sadeco/index/i_3.png", alt="")
+													figcaption
+														h4 Sông ông lớn <i class="fas fa-caret-right text-right"></i>
+								.row.no-gutters
+									-for(i=1;i<4;i++)
+										.col-md-6.col-lg-4
+											a.item(href="javascript:void(0)")
+													figure
+														.box
+															img(src="./img/sadeco/index/i_4.png", alt="")
+														figcaption
+															h4 Sông ông lớn <i class="fas fa-caret-right text-right"></i>

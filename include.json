@@ -8,12 +8,58 @@
             "body": [
 				"index/i-1",
 				"index/i-2",
+				"index/i-3",
+				"index/i-4",
+				"tabs/t-1",
+				"tabs/t-2",
                 "banner/b-1",
                 "breadcrumb/b-1",
 				"nav/n-2",
 				"index/i-1",
                 "form/f-1"
-            ]
+			],
+			"footer": [
+				"footer/f-1"
+			]
+		},
+		"gioithieu": {
+            "header": [
+                "header/h-1",
+                "header/h-2"
+            ],
+            "body": [
+				"gioithieu/g-1",
+				"gioithieu/g-2",
+				"nav/n-1"
+            ],
+			"footer": [
+				"footer/f-1"
+			]
+        },
+		"thongdiep": {
+            "header": [
+                "header/h-1",
+                "header/h-2"
+            ],
+            "body": [
+				"thongdiep/t-1"
+            ],
+			"footer": [
+				"footer/f-1"
+			]
+        },
+		"cocautochuc": {
+            "header": [
+                "header/h-1",
+                "header/h-2"
+            ],
+            "body": [
+				"cocautochuc/c-1",
+				"carousel/c-1"
+            ],
+			"footer": [
+				"footer/f-1"
+			]
         }
     }
 }

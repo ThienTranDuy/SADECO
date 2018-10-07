@@ -1,0 +1,26 @@
+.canhcam-index-tabs-1
+	.container
+		.row
+			.col
+				ul#ccTabs.nav.nav-tabs(role="tablist")
+					li.nav-item
+						a#cct-01-tab.nav-link.active(data-toggle="tab" href="#cct-01" role="tab" aria-controls="cct-01" aria-selected="true") TIN THỊ TRƯỜNG
+					li.nav-item
+						a#cct-02-tab.nav-link(data-toggle="tab" href="#cct-02" role="tab" aria-controls="cct-02" aria-selected="false") Tin công ty
+				#ccTabsContent.tab-content
+					#cct-01.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="cct-01-tab")
+						.row
+							-for(i=1;i<5;i++)
+								.col-md-6.col-lg-3
+									a.item(href="#")
+										time
+											i.fas.fa-calendar-alt 
+											|28/07/2018
+										h3 Nhộn nhịp giao dịch nhà đất tại các tỉnh vùng ven thành phố Hồ Chí Minh
+					#cct-02.tab-pane.fade(role="tabpanel" aria-labelledby="cct-02-tab")
+						.row
+							-for(i=1;i<5;i++)
+								.col-md-6.col-lg-3
+									a.item(href="#")
+										time.fas.fa-calendar-alt  28/07/2018
+										h3 Nhộn nhịp giao dịch nhà đất tại các tỉnh vùng ven thành phố Hồ Chí Minh

@@ -1,54 +1,36 @@
 @import ../../_includes
-.canhcam-index-2
+.canhcam-index-3
 	+mrc-padding
 	text-align: center
 	color: color-get($mau, den-1)
 	h2, h3
 		text-transform: uppercase
 	h2
-		+fw(initial)
+		+fw(500)
 		+fz(1.5rem)
 		+lh(r(48px))
 		+media-breakpoint-up(lg)
 			+fz(r(40px))
 			+lh(r(40px))
+	.day
+		color: color-get($mau, trang)
+		p
+			+fz(r(24px))
 	.item
 		+mar(1.5rem null .5rem)
 		figure
-			position: relative
 			img
 				width: 100%
 			figcaption
-				.day
-					+pos(abs, 20px null null 0)
-					height: 57px
-					width: 76px
-					background: color-rgba(color-get($mau,main),.9)
-					p,time
-						color: color-get($mau, trang)
-					p
-						+fz(r(24px))
-						+mar(0)
-					time
-						+fz(r(14px))
-						position: relative
-						&:before
-							content: ""
-							background: color-get($mau, trang)
-							width: 100%
-							height: 1px
-							+pos(abs, -5px null null 0)
 				h3
-					+fw(initial)
 					+lh(r(24px))
-					+mar(1.5rem null 1rem)
+					+mar(1.5rem null .5rem)
 					display: -webkit-box
 					-webkit-line-clamp: 3
 					-webkit-box-orient: vertical
 					+media-breakpoint-up(lg)
 						+fz(r(16px))
 				a
-					+fw(initial)
 					+fz(r(14px))
 					font-style: italic
 					color: color-get($mau, den-1)
