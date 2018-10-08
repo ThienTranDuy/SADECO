@@ -1,21 +1,31 @@
-header
-	.canhcam-header-1
-		.container.d-flex.flex-wrap
-			.logo
+.canhcam-header-1
+	.container
+		.row.no-gutters
+			.col.logo
 				a(href="index.html")
-					img(src="./img/logo.png")
-			.ml-auto.phone.d-none.d-lg-flex
-				p Liên hệ đặt lịch kiểm tra da miễn phí
-				a(href="tel:0932142224") 
-					span.mdi.mdi-phone 
-					span 0932 14 22 24
-			.search.d-none.d-lg-flex
-				.form-group.mb-0
-					input(type="text", name="search")
-			.lang.d-none.d-lg-flex
+					img(src="./img/sadeco/logo.png")
+			.col-auto.slogan.ml-auto.d-none.d-lg-flex
+				p Công ty cổ phần phát triển nam sài gòn
+			.col-auto.hotline.d-none.d-sm-flex
+				a(href="tel:0123456789")
+					span 0123456789
+			.col-auto.messenger
 				a(href="#")
-					img(src="./img/icon/flag-2.png")
-				a(href="#")
-					img(src="./img/icon/flag-1.png")
-			.toggle-menu.d-lg-none
-				span.mdi.mdi-menu
+					img(src="./img/sadeco/messenger-icon.png", alt="")
+			.col-auto.language
+				.dropdown
+					#language.dropdown-toggle(data-toggle='dropdown')
+						| VN
+					.dropdown-menu(aria-labelledby='language')
+						a.item(href='#')
+							img(src="./img/icon/flag-2.png")
+						a.item(href='#')
+							img(src="./img/icon/flag-1.png")
+			.col-auto.search.d-none.d-lg-flex
+				.dropdown
+					#search.dropdown-toggle(data-toggle='dropdown')
+						span.mdi.mdi-magnify
+					.dropdown-menu(aria-labelledby='search', k-menu-map-to="#search-mobile")
+						.searchbox
+							input(type="text")
+							input(type="button", value="GỬI")
