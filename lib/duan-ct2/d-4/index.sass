@@ -1,15 +1,22 @@
 @import ../../_includes
-.canhcam-duan-ct-d-1
+.canhcam-duanct2-d-4
 	+fw(400)
-	+mrc-padding
-	text-align: center
+	margin-bottom: 2rem
 	color: color-get($mau, den-1)
 	h2, h3
 		text-transform: uppercase
 	h2
 		+fw(initial)
 		+fz(1.5rem)
+		text-align: center
 		margin-bottom: .5rem
 		+media-breakpoint-up(lg)
 			+fz(r(40px))
 			margin-bottom: 1rem
+	figure
+		display: flex
+		justify-content: center
+		align-items: center
+		img
+			+media-breakpoint-down(lg)
+			width: 100%

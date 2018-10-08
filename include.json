@@ -61,6 +61,19 @@
 				"footer/f-1"
 			]
         },
+		"daututaichinh": {
+            "header": [
+                "header/h-1",
+                "header/h-2"
+            ],
+            "body": [
+				"daututaichinh/d-1",
+				"tabs/t-5"
+            ],
+			"footer": [
+				"footer/f-1"
+			]
+        },
 		"cocautochuc": {
             "header": [
                 "header/h-1",
@@ -94,6 +107,23 @@
             "body": [
 				"duan-ct/d-1",
 				"tabs/t-3"
+            ],
+			"footer": [
+				"footer/f-1"
+			]
+        },
+		"duan-ct2": {
+            "header": [
+                "header/h-1",
+                "header/h-2"
+            ],
+            "body": [
+				"duan-ct2/d-1",
+				"duan-ct2/d-2",
+				"duan-ct2/d-3",
+				"duan-ct2/d-4",
+				"duan-ct2/d-5",
+				"duan-ct2/d-6"
             ],
 			"footer": [
 				"footer/f-1"

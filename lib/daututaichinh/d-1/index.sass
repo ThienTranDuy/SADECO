@@ -1,14 +1,16 @@
 @import ../../_includes
-.canhcam-cocautochuc-c-1
+.canhcam-daututaichinh-d-1
 	+fw(400)
+	+mrc-padding
+	color: color-get($mau, den-1)
 	article
-		+pad(1rem 0)
-	img
-		width: 100%
-	h2, h3, h4, h5, p, li
-		color: color-get($mau, den-1)
-		margin-bottom: 1rem
+		+pad(2rem null 3rem null)
+		text-align: center
+		+media-breakpoint-up(lg)
+			text-align: left
+			+pad(0 0 3rem 0)
 	h2
+		margin: 0 !important
 		+fw(initial)
 		+fz(1.5rem)
 		text-transform: uppercase
@@ -16,20 +18,3 @@
 		+mar(null null 1rem null)
 		+media-breakpoint-up(lg)
 			text-align: left
-			+fz(r(30px))
-	h3
-		+fz(r(15px))
-		color: color-get($mau, do-3)
-		position: relative
-		padding-left: 1rem
-		text-transform: uppercase
-		+mar(null null 1rem null)
-		&:after
-			content: ""
-			width: 5px
-			height: 5px
-			border-radius: 50%
-			background: color-get($mau, xam-7)
-			+pos(abs, 40% null null 0)
-
-

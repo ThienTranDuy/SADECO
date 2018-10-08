@@ -1,0 +1,36 @@
+@import ../../_includes
+.canhcam-index-tabs-5
+	+fw(400)
+	+pad(1rem 0)
+	+media-breakpoint-up(lg)
+		+pad(1rem 0)
+	figure
+		+mar(1rem 0)
+		img
+			width: 100%
+		figcaption
+			border-width: 1px
+			border-color: rgb(235, 235, 235)
+			border-style: solid
+			border-top: none
+			h3
+				+pad(.5rem)
+				z-index: 9
+				width: 100%
+				+fz(r(15px))
+				text-align: left
+				color: color-get($mau, trang)
+				background: color-get($mau, extra)
+				text-transform: uppercase
+				+mar(0)
+				box-shadow: 0 0 0 1px color-get($mau, extra)
+			p
+				+fz(r(14px))
+				display: -webkit-box
+				-webkit-line-clamp: 1
+				-webkit-box-orient: vertical
+				overflow: hidden
+				text-overflow: ellipsis
+				text-align: left
+				+pad(1.5rem)
+
