@@ -42,7 +42,8 @@
                 "header/h-2"
             ],
             "body": [
-				"thongdiep/t-1"
+				"thongdiep/t-1",
+				"pagination/p-1"
             ],
 			"footer": [
 				"footer/f-1"
@@ -131,7 +132,8 @@
             ],
             "body": [
 				"phattrienbenvung/p-1",
-				"tabs/t-4"
+				"tabs/t-4",
+				"pagination/p-1"
             ],
 			"footer": [
 				"footer/f-1"

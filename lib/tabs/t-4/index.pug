@@ -4,19 +4,20 @@
 			.col
 				ul#ccTabs.nav.nav-tabs(role="tablist")
 					li.nav-item
-						a#cct-03-tab.nav-link.active(data-toggle="tab" href="#cct-01" role="tab" aria-controls="cct-01" aria-selected="true") Sắp triểnt khai
+						a#cct-03-tab.nav-link.active(data-toggle="tab" href="#cct-01" role="tab" aria-controls="cct-01" aria-selected="true") hoạt động nội bộ
 					li.nav-item
-						a#cct-04-tab.nav-link(data-toggle="tab" href="#cct-02" role="tab" aria-controls="cct-02" aria-selected="false") Đang mở bán
+						a#cct-04-tab.nav-link(data-toggle="tab" href="#cct-02" role="tab" aria-controls="cct-02" aria-selected="false") Đảng - Đoàn thể
 				#ccTabsContent.tab-content
 					#cct-03.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="cct-03-tab")
 						.row
-							-for(i=1;i<5;i++)
+							-for(i=1;i<7;i++)
 								.col-md-6.col-lg-4
 									a(href="javascript:void(0").item
 										figure
-											img(src="./img/sadeco/tintuc/t_1.png", alt="")
+											img(src="./img/sadeco/phattrienbenvung/p_2.png", alt="")
 											figcaption
 												.day
 													p 24
 													time 08/2018
-												h3 CÓ NÊN CHO PHÉP DOANH NGHIỆP ĐƯỢC ĐẦU TƯ CĂN HỘ MINI ?
+												h3 Cuộc thi sáng tác Slogan công ty Sadeco 2018
+		include ../../pagination/p-1/index.pug
