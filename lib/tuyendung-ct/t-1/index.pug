@@ -1,0 +1,63 @@
+section.canhcam-tuyendung-ct-1
+	.container
+		.row
+			//- Relation news
+			.col-lg-3.rela-news
+				.row 
+					.col-12.othernews
+						h3 TUYỂN DỤNG KHÁC
+				.row 
+					-for(i=1;i<6;i++)
+						.col-xs-6.col-sm-6.col-md-6.col-lg-12.item-news
+							.calendar
+								a.item(href="javascript:void(0)")
+									.box
+										i.fa.fa-calendar
+										time 08/08/2018
+										h4 Tuyển dụng vị trí giám đốc Marketing
+			.col-lg-9
+				.title
+					h2 Nhân viên kinh doanh
+					i.fa.fa-calendar
+					time 08/08/2018
+				p Thông tin tuyển dụng
+				table.table.table-striped
+					tr
+						th Yêu cầu giới tính: 
+						td Nam
+					//- row 4
+					tr
+						th Địa điểm làm việc: 
+						td Tp Hồ Chí Minh
+					//- row 5
+					tr
+						th Yêu cầu độ tuổi: 
+						td 25-35
+					//- row 6
+					tr
+						th Mức lương: 
+						td Thương lượng
+					//- row 7
+					tr
+						th Bằng cấp tối thiểu: 
+						td Tốt nghiệp Cao Đẳng trở lên.
+					//- row 8
+					tr
+						th Số lượng cần tuyển:
+						td 2
+					//- row 9
+					tr
+						th Kinh nghiệm tối thiểu: 
+						td 1
+
+				-for(x=1;x<4;x++)
+					h5 Mô tả công việc
+					ul
+						-for(i=1;i<6;i++)
+							li Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, expedita!
+				h5 Thời hạn nộp hồ sợ: <span class="date">30/02/2018<span>
+				.row
+					.col-md-4.my-4
+						a.btn-z.btn-z-1 Ứng tuyển trực tuyến
+					.col-md-4.my-4
+						a.btn-z.btn-z-2 Tải mẫu đón xin việc

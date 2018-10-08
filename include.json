@@ -194,6 +194,56 @@
             "footer": [
                 "footer/f-1"
             ]
+        },
+        "thuvien": {
+            "header": [
+                "header/h-1",
+                "header/h-2"
+            ],
+            "body": [
+                "thuvien/t-1",
+                "tabs/t-4"
+            ],
+            "footer": [
+                "footer/f-1"
+            ]
+        },
+        "tuyendung": {
+            "header": [
+                "header/h-1",
+                "header/h-2"
+            ],
+            "body": [
+                "tuyendung/t-1",
+                "tuyendung/t-2"
+            ],
+            "footer": [
+                "footer/f-1"
+            ]
+        },
+        "tuyendung-ct": {
+            "header": [
+                "header/h-1",
+                "header/h-2"
+            ],
+            "body": [
+                "tuyendung-ct/t-1"
+            ],
+            "footer": [
+                "footer/f-1"
+            ]
+        },
+        "brochure": {
+            "header": [
+                "header/h-1",
+                "header/h-2"
+            ],
+            "body": [
+                "brochure/b-1"
+            ],
+            "footer": [
+                "footer/f-1"
+            ]
         }
     }
 }

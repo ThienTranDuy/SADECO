@@ -1,0 +1,43 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-tuyendung-2
+	+fw(400)
+	color: color-get($mau, den-1)
+	h2
+		+fw(initial)
+		+fz(1.5rem)
+		+lh(r(48px))
+		text-transform: uppercase
+		text-align: center
+		+media-breakpoint-up(lg)
+			text-align: left
+			+fz(r(30px))
+			+lh(r(40px))
+	figure
+		img
+			width: 100%
+	.content
+		p
+			+fz(r(15px))
+	table
+		thead
+			border-bottom: 2px solid color-get($mau, main)
+		tr
+			&:active
+				box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2)
+			+media-breakpoint-up(md)
+				&:hover
+					box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2)
+		th
+			vertical-align: top
+			+fz(r(18px))
+			+fw(500)
+			+pad(1rem 0)
+			border-top: 0 !important
+			border-bottom: 1px solid #dee2e6 !important
+		td
+			+fz(r(15px))
+			+pad(1rem 0)

@@ -1,0 +1,77 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-tuyendung-ct-1
+	+fw(400)
+	+mrc-padding
+	color: color-get($mau, den-1)
+	.title
+		margin-bottom: 1rem
+		+media-breakpoint-down(md)
+			+mar(2rem 0)
+	.calendar
+		+pad(.5rem 0)
+		border-bottom: 1px dashed color-get($mau, den-3)
+	h2
+		+fw(initial)
+		+fz(r(30px))
+		margin-bottom: 1rem
+		+media-breakpoint-up(lg)
+	h3
+		+fw(400)
+		+pad(.7rem 1.5rem)
+		width: 100%
+		background: color-get($mau, extra)
+		color: color-get($mau, trang)
+		+fz(r(18px))
+	i, time
+		+fz(r(13px))
+		color: color-get($mau, den-3)
+	h4
+		+fz(1rem)
+		color: color-get($mau, den-2)
+		margin-top: .5rem
+		+fw(400)
+		+lh(1.5)
+	h5
+		color: color-get($mau, title-contact)
+		+fz(r(16px))
+		+mar(1rem 0)
+	ul
+		+pad(0)
+		list-style: none
+		li
+			+pad(0 1rem)
+			+fz(1rem)
+			position: relative
+			color: color-get($mau, den-1)
+			+lh(1.8)
+			&:after
+				content: ""
+				+pos(abs,8px null null 0)
+				width: 8px
+				height: 8px
+				+bor-rad(50%)
+				background: color-get($mau, den-3)
+	.date
+		color: color-get($mau, den-1)
+		+fz(1rem)
+		+fw(400)
+	table
+		tr
+			background-color: rgba(0, 0, 0, 0.01)
+			th,td
+				border: none
+				+fw(400)
+	a.btn-z
+		color: color-get($mau, trang)
+		text-transform: uppercase
+		+pad(16px 22px)
+		+fz(r(16px))
+		text-align: center
+	a.btn-z-1
+		background: color-get($mau, main) !important
+	a.btn-z-2
+		background: color-get($mau, extra) !important

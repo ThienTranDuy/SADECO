@@ -1,0 +1,22 @@
+section.canhcam-brochure-b-1
+	.container
+		.row
+			//- Relation news
+			.col-lg-3.rela-news
+				include ../../nav/n-1/index.pug
+			.col-lg-9
+				.title
+					h2 brochure
+				table.table.table-striped
+					thead
+						tr
+							th Tiêu đề
+							th.text-center Ngày đăng
+							th.text-center tải về
+					tbody
+						-for(i=1;i<10;i++)
+							tr
+								td Brochure dự án Sông Ông Lớn
+								td.text-center 21.01.2018
+								td.text-center <i class="fas fa-download"></i>
+				include ../../pagination/p-1/index.pug
