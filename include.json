@@ -54,12 +54,9 @@
                 "header/h-2"
             ],
             "body": [
-<<<<<<< HEAD
-                "quanhedautu/q-1"
-=======
-				"thongdiep/t-1",
-				"pagination/p-1"
->>>>>>> aec5c9fdd2038d6e6b519e42828b65faded0dd33
+                "quanhedautu/q-1",
+                "thongdiep/t-1",
+                "pagination/p-1"
             ],
             "footer": [
                 "footer/f-1"
@@ -148,14 +145,21 @@
                 "header/h-2"
             ],
             "body": [
-<<<<<<< HEAD
                 "lienhe/l-1",
                 "tabs/t-4"
-=======
-				"phattrienbenvung/p-1",
-				"tabs/t-4",
-				"pagination/p-1"
->>>>>>> aec5c9fdd2038d6e6b519e42828b65faded0dd33
+            ],
+            "footer": [
+                "footer/f-1"
+            ]
+        },
+        "video": {
+            "header": [
+                "header/h-1",
+                "header/h-2"
+            ],
+            "body": [
+                "video/v-1",
+                "tabs/t-4"
             ],
             "footer": [
                 "footer/f-1"
