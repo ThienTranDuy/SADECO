@@ -1,9 +1,9 @@
 @import ../../_includes
 .canhcam-index-tabs-4
-	+fw(400)
-	+pad(1rem 0)
+	background: color-get($mau,xam-10)
+	+pad(3rem 0)
 	+media-breakpoint-up(lg)
-		+pad(1rem 0)
+		+pad(3rem 0)
 	.nav-tabs
 		display: flex
 		justify-content: center
@@ -11,17 +11,16 @@
 		text-align: center
 		border: 0
 		margin-bottom: 30px
-		background: color-get($mau,xam-3)
 		.nav-item
 			+mar(0)
 			+media-breakpoint-down(md)
 				width: 100%
 			.nav-link
-				+fz(r(18px))
-				+fw(600)
+				border: none
 				border-radius: 0
 				position: relative
-				+pad(.5rem 5rem)
+				border: .5px solid color-get($mau, trang)
+				+pad(r(10px) r(53px))
 				text-transform: uppercase
 				background: color-get($mau,xam-3)
 				color: color-get($mau,den-1)
@@ -65,7 +64,7 @@
 			img
 				width: 100%
 			figcaption
-				+pad(0 1rem)
+				+pad(1rem 1.5rem)
 				.day
 					+pos(abs, 20px null null 0)
 					height: 57px
@@ -86,3 +85,6 @@
 							width: 100%
 							height: 1px
 							+pos(abs, -5px null null 0)
+				h3
+					+fz(r(16px))
+					text-align: center

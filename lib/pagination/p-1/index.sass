@@ -1,0 +1,40 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-pagination-sadeco-1
+	border: none
+	// +pad(2rem 0)
+	// +media-breakpoint-up(lg)
+	// 	+pad(4rem 0)
+	.pagelist
+		.pagination
+			color: color-get($mau,trang) !important
+			display: flex
+			justify-content: center
+			align-items: center
+			text-align: center
+			margin-bottom: 0
+			.page-item
+				margin-left: .5rem
+				&:first-child
+					margin-left: 0
+				.page-link
+					border: none
+					width: 2.5rem
+					height: 2.5rem
+					justify-content: center
+					align-items: center
+					display: flex
+					background: darken(color-get($mau,trang) ,20%)
+					color: color-get($mau,trang)
+					+transition(all .3s ease-in-out)
+					&:active
+						background: color-get($mau,extra) !important
+					+media-breakpoint-up(lg)
+						&:hover
+							background: color-get($mau,extra)
+			.active
+				.page-link
+					background: color-get($mau,extra) !important
