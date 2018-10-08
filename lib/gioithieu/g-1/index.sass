@@ -1,32 +1,35 @@
 @import ../../_includes
 .canhcam-gioithieu-1
+	+fw(400)
 	+mrc-padding
 	color: color-get($mau, den-1)
 	article.intro-1
-		+mrc-padding
+		+pad(2rem null 3rem null)
 		text-align: center
 		+media-breakpoint-up(lg)
-			+pad(0)
 			text-align: left
+			+pad(0 0 3rem 0)
 		h2
-			+fw(500)
+			+fw(400)
 			+fz(1.5rem)
-			+lh(r(48px))
 			text-transform: uppercase
+			margin-bottom: 1rem
 			+media-breakpoint-up(lg)
 				+fz(r(40px))
-				+lh(r(40px))
-				margin-bottom: r(60px)
+				margin-bottom: 4rem
 		h3
 			+fw(700)
-			+lh(r(28px))
 			+mar(0)
 			color: color-get($mau, do-4)
+			margin-top: 1rem
+			+media-breakpoint-up(lg)
+				margin-top: 0
 		p
+			+pad(.5rem 0 1rem 0)
 			+fw(500)
 			+fz(r(15px))
 			+lh(r(28px))
-			+pad(1rem 0)
+			text-align: left
 		.box
 			position: relative
 			+pad(0)
@@ -38,8 +41,8 @@
 					display: block
 					content: ""
 					border: 4px solid color-get($mau, den-5)
-					width: 255px
-					height: 260px
+					width: 225px
+					height: 270px
 					+pos(abs, -28px null null -5px)
 					z-index: -1
 			img
@@ -51,3 +54,4 @@
 			+bor-rad(3px)
 			border: 1px solid color-get($mau, do-5)
 			text-transform: uppercase
+			color: color-get($mau, den-1)

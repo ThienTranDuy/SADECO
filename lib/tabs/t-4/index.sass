@@ -1,0 +1,88 @@
+@import ../../_includes
+.canhcam-index-tabs-4
+	+fw(400)
+	+pad(1rem 0)
+	+media-breakpoint-up(lg)
+		+pad(1rem 0)
+	.nav-tabs
+		display: flex
+		justify-content: center
+		align-items: center
+		text-align: center
+		border: 0
+		margin-bottom: 30px
+		background: color-get($mau,xam-3)
+		.nav-item
+			+mar(0)
+			+media-breakpoint-down(md)
+				width: 100%
+			.nav-link
+				+fz(r(18px))
+				+fw(600)
+				border-radius: 0
+				position: relative
+				+pad(.5rem 5rem)
+				text-transform: uppercase
+				background: color-get($mau,xam-3)
+				color: color-get($mau,den-1)
+				&.active
+					background: color-get($mau,extra)
+					color: color-get($mau, trang)
+	.tab-content
+		.text
+			+pad(r(30px) r(20px) 0 r(20px))
+			background: color-get($mau, den-4)
+			text-align: left
+			position: relative
+			height: 100%
+			&:after
+				content: ""
+				width: 23px
+				height: 46px
+				background: url('../img/sadeco/index/i_5.png')
+				+pos(abs, 20px -23px null null)
+				z-index: 300
+				opacity: .9
+				+media-breakpoint-down(lg)
+					display: none
+			h3
+				+fz(r(18px))
+				+fw(bold)
+				margin-bottom: 1rem
+				text-transform: uppercase
+				color: color-get($mau, trang)
+			p
+				+fw(400)
+				+fz(1rem)
+				+lh(r(24px))
+				color: color-get($mau,xam-6)
+		.item
+		+mar(1.5rem null .5rem)
+		figure
+			position: relative
+			+pad(1rem 0)
+			border-bottom: 1px solid color-get($mau, xam-5)
+			img
+				width: 100%
+			figcaption
+				+pad(0 1rem)
+				.day
+					+pos(abs, 20px null null 0)
+					height: 57px
+					width: 76px
+					background: color-rgba(color-get($mau,main),.9)
+					p,time
+						color: color-get($mau, trang)
+					p
+						+fz(r(24px))
+						+mar(0)
+						text-align: center !important
+					time
+						+fz(r(14px))
+						position: relative
+						&:before
+							content: ""
+							background: color-get($mau, trang)
+							width: 100%
+							height: 1px
+							+pos(abs, -5px null null 0)

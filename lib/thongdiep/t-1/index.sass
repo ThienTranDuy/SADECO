@@ -1,13 +1,17 @@
 @import ../../_includes
 .canhcam-thongdiep-t-1
 	+mrc-padding
+	+fw(400)
+	color: color-get($mau, den-1)
+	margin-bottom: 1rem
 	article
-		+pad(2rem 0)
+		+pad(0 0 2rem 0)
 		+media-breakpoint-up(lg)
 			+pad(0)
-	h2, h3, h4, h5, p, li
-		color: color-get($mau, den-1)
-		margin-bottom: 1rem
+	section.block
+		+pad(1rem 0)
+		+media-breakpoint-up(lg)
+			+pad(1rem 0)
 	h2
 		+fw(initial)
 		+fz(1.5rem)
@@ -16,11 +20,14 @@
 		+media-breakpoint-up(lg)
 			text-align: left
 			+fz(r(30px))
+			margin-bottom: 1.5rem
 	h3
 		+fw(SemiBold)
 		+fz(r(18px))
 		color: color-get($mau, extra) !important
+		+mar(.5rem 0)
 	h4
+		+mar(.5rem 0)
 		+fw(600)
 		+fz(r(16px))
 	h5
@@ -28,17 +35,38 @@
 		+fw(400)
 		text-align: center
 		+media-breakpoint-up(lg)
-			+fz(r(20px))
+			+fz(r(20px))	
 			text-align: left
 	p
 		+fz(r(15px))
 		+fw(initial)
+		+mar(.5rem 0)
 		+media-breakpoint-up(lg)
-			margin-bottom: 2rem
+			+mar(1rem 0)
 	figure
-		+mar(1rem null 1.5rem)
-		img
+		img	
 			width: 100%
+	.item
+		figure
+			display: flex
+			flex-direction: column
+			+mar(.5rem 0)
+			+media-breakpoint-up(lg)
+				flex-direction: row
+				+mar(1rem 0)
+				img
+					width: auto
+			img
+				width: 30%
+			figcaption
+				p
+					+fz(r(15px))
+					+fw(initial)
+					text-align: left
+					+mar(1rem 0)
+					text-transform: none
+					+media-breakpoint-up(lg)
+						+mar(0 1rem)
 	ul
 		padding-left: 15px
 		li

@@ -1,0 +1,23 @@
+.canhcam-index-tabs-3
+	.container
+		.row
+			.col
+				ul#ccTabs.nav.nav-tabs(role="tablist")
+					li.nav-item
+						a#cct-03-tab.nav-link.active(data-toggle="tab" href="#cct-01" role="tab" aria-controls="cct-01" aria-selected="true") Sắp triểnt khai
+					li.nav-item
+						a#cct-04-tab.nav-link(data-toggle="tab" href="#cct-02" role="tab" aria-controls="cct-02" aria-selected="false") Đang mở bán
+					li.nav-item
+						a#cct-05-tab.nav-link(data-toggle="tab" href="#cct-03" role="tab" aria-controls="cct-03" aria-selected="false") Đã thực hiện
+				#ccTabsContent.tab-content
+					#cct-03.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="cct-03-tab")
+						.row
+							-for(i=1;i<7;i++)
+								.col-md-4
+									a.item(href="javascript:void(0)")
+										figure
+											.box
+												img(src="./img/sadeco/index/i_3.png", alt="")
+											figcaption
+												h3 Tân quy đông
+												p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam provident ullam optio explicabo fugit ab officiis possimus sint, iste quo?

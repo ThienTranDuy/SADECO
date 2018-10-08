@@ -1,0 +1,24 @@
+@import ../../_includes
+.canhcam-nav-3
+	ul
+		flex-direction: column
+		li
+			background: color-get($mau, trang)
+			&:after
+				content: ""
+				width: 100%
+				height: 1px
+				background: color-get($mau, xam-5)
+				+pos(abs, null 0 0 null)
+			a
+				+fw(500)
+				+fz(r(15px))
+				color: color-get($mau, den-1)
+			.mdi
+				color: color-get($mau, extra)
+		li.active
+			background: color-get($mau, extra)
+			a
+				color: color-get($mau, trang)
+			.mdi
+				color: color-get($mau, trang)

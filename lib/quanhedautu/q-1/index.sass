@@ -1,0 +1,38 @@
+@import ../../_includes
+.canhcam-quanhedautu-q-1
+	+mrc-padding
+	+fw(400)
+	color: color-get($mau, den-1)
+	margin-bottom: 1rem
+	article
+		+pad(2rem 0)
+		+media-breakpoint-up(lg)
+			+pad(0)
+	section.block
+		+pad(1rem 0)
+		+media-breakpoint-up(lg)
+			+pad(1rem 0)
+	h2
+		+fw(initial)
+		+fz(1.5rem)
+		text-transform: uppercase
+		text-align: center
+		+media-breakpoint-up(lg)
+			text-align: left
+			+fz(r(30px))
+			margin-bottom: 1.5rem
+	p
+		+fz(r(15px))
+		+fw(initial)
+		+mar(.5rem 0)
+		+media-breakpoint-up(lg)
+			+mar(1rem 0)
+	figure
+		+pad(1rem 0)
+		img	
+			width: 100%
+	ul
+		list-style: none
+		+pad(0)
+		li
+			+fz(r(15px))

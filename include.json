@@ -48,6 +48,18 @@
 				"footer/f-1"
 			]
         },
+		"quanhedautu": {
+            "header": [
+                "header/h-1",
+                "header/h-2"
+            ],
+            "body": [
+				"quanhedautu/q-1"
+            ],
+			"footer": [
+				"footer/f-1"
+			]
+        },
 		"cocautochuc": {
             "header": [
                 "header/h-1",
@@ -56,6 +68,70 @@
             "body": [
 				"cocautochuc/c-1",
 				"carousel/c-1"
+            ],
+			"footer": [
+				"footer/f-1"
+			]
+        },
+		"duan": {
+            "header": [
+                "header/h-1",
+                "header/h-2"
+            ],
+            "body": [
+				"duan/d-1"
+            ],
+			"footer": [
+				"footer/f-1"
+			]
+        },
+		"duan-ct": {
+            "header": [
+                "header/h-1",
+                "header/h-2"
+            ],
+            "body": [
+				"duan-ct/d-1",
+				"tabs/t-3"
+            ],
+			"footer": [
+				"footer/f-1"
+			]
+        },
+		"tintuc": {
+            "header": [
+                "header/h-1",
+                "header/h-2"
+            ],
+            "body": [
+				"tintuc/t-1",
+				"tabs/t-3"
+            ],
+			"footer": [
+				"footer/f-1"
+			]
+        },
+		"tintuc-ct": {
+            "header": [
+                "header/h-1",
+                "header/h-2"
+            ],
+            "body": [
+				"tintuc-ct/t-1",
+				"tabs/t-3"
+            ],
+			"footer": [
+				"footer/f-1"
+			]
+        },
+		"phattrienbenvung": {
+            "header": [
+                "header/h-1",
+                "header/h-2"
+            ],
+            "body": [
+				"phattrienbenvung/p-1",
+				"tabs/t-4"
             ],
 			"footer": [
 				"footer/f-1"

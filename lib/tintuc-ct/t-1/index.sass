@@ -1,0 +1,65 @@
+@import ../../_includes
+.canhcam-tinctuc-ct-t-1
+	+mrc-padding
+	+fw(400)
+	color: color-get($mau, den-1)
+	img
+		+media-breakpoint-down(md)
+		width: 100%
+	.news-read
+		h1
+			+fz(r(20px))
+			+fw(400)
+			+mar(null null 1rem null)
+		time
+			+fz(r(14px))
+			color: color-get($mau, den-3)
+		.card 
+			border: none
+			.card-body
+				padding: 0 !important
+				+mar(1rem 0)
+				+fw(600)
+				+fz(r(14px))
+				font-style: italic
+				color: color-get($mau, den-2)
+		p
+			+fz(r(15px))
+			+mar(.5rem 0)
+		figure
+			+mar(1.5rem)
+			display: flex
+			justify-content: center
+		.social-networks
+			border-top: 1px solid color-get($mau, xam-6)
+			padding-top: r(18px)
+			margin-top: r(52px)
+			+media-breakpoint-down(lg)
+				margin-bottom: 2rem
+	.othernews
+		h2
+			+fz(r(21.3px))
+			text-align: center
+			margin-bottom: 1rem
+			+media-breakpoint-up(lg)
+				text-align: left
+		.box-1
+			border-top: 2px solid color-get($mau, cam-4)
+		figure
+			display: flex
+			border-bottom: 1px solid color-get($mau, xam-9)
+			+pad(1rem 0)
+			+mar(0)
+		figcaption
+			+pad(0 0 0 1rem)
+			h3
+				+fz(r(14px))
+				display: -webkit-box
+				-webkit-line-clamp: 3
+				-webkit-box-orient: vertical
+				overflow: hidden
+				&:active
+					color: color-get($mau, main)
+				+media-breakpoint-up(md)
+					&:hover
+						color: color-get($mau, main)

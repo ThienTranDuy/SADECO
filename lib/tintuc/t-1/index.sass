@@ -1,0 +1,76 @@
+@import ../../_includes
+.canhcam-tintuc-t-1
+	+mrc-padding
+	+fw(400)
+	color: color-get($mau, den-1)
+	margin-bottom: 1rem
+	article
+		+pad(2rem 0)
+		+media-breakpoint-up(lg)
+			+pad(0)
+	section.block
+		+pad(1rem 0)
+		+media-breakpoint-up(lg)
+			+pad(1rem 0)
+	h2
+		+fw(initial)
+		+fz(1.5rem)
+		text-transform: uppercase
+		text-align: center
+		+media-breakpoint-up(lg)
+			text-align: left
+			+fz(r(30px))
+			margin-bottom: 1.5rem
+	.item
+		+mar(1.5rem null .5rem)
+		figure
+			position: relative
+			display: flex
+			flex-direction: column
+			+pad(1rem 0)
+			border-bottom: 1px solid color-get($mau, xam-5)
+			+media-breakpoint-up(md)
+				flex-direction: row
+			img
+				width: 100%
+			figcaption
+				+pad(0 1rem)
+				.day
+					+pos(abs, 20px null null 0)
+					height: 57px
+					width: 76px
+					background: color-rgba(color-get($mau,main),.9)
+					p,time
+						color: color-get($mau, trang)
+					p
+						+fz(r(24px))
+						+mar(0)
+						text-align: center !important
+					time
+						+fz(r(14px))
+						position: relative
+						&:before
+							content: ""
+							background: color-get($mau, trang)
+							width: 100%
+							height: 1px
+							+pos(abs, -5px null null 0)
+				h3
+					+fw(bold)
+					+lh(r(24px))
+					display: -webkit-box
+					-webkit-line-clamp: 3
+					-webkit-box-orient: vertical
+					text-transform: uppercase
+					+mar(1.5rem null 1rem)
+					+media-breakpoint-up(lg)
+						+fz(r(16px))
+						+mar(0 null 1rem null)
+				p
+					+fz(r(15px))
+					color: color-get($mau, den-2)
+					display: -webkit-box
+					-webkit-line-clamp: 4
+					-webkit-box-orient: vertical
+					overflow: hidden
+					text-overflow: ellipsis

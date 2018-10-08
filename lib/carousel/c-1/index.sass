@@ -6,14 +6,19 @@
 .canhcam-carousel-1
 	.item
 		figure
+			+mar(null null 0rem null)
 			img
 				width: 100%
 		figcaption
+			text-align: center
+			+mar(1rem null 0rem null)
+			+media-breakpoint-up(lg)
 			h4
-				+fz()
+				+mar(null null .5rem null)
 				strong
 					text-transform: uppercase
 			p
+				+mar(null null 0rem null)
 	.owl-carousel
 		position: relative
 		// Main
@@ -25,7 +30,6 @@
 					+pad(.5rem_)
 					width: 3rem
 					height: 3rem
-					background: darken(color-get($mau,trang),5%)
 					+bor-rad(50%)
 					text-align: center
 					&:focus
@@ -36,15 +40,16 @@
 			+media-breakpoint-up(md)
 				margin-top: 0
 				button
+					color: color-get($mau, trang)
 					&.owl-prev, &.owl-next
 						margin: 0
 						+transform(translateY(-50%))
 						&:focus
 							outline: none
 					&.owl-prev
-						+pos(abs, 50% null null -1rem)
+						+pos(abs, 35% null null -1rem)
 					&.owl-next
-						+pos(abs, 50% -1rem null null)
+						+pos(abs, 35% -1rem null null)
 		// Dots
 		.owl-dots
 			.owl-dot
