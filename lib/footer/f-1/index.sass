@@ -3,21 +3,121 @@
 // CODE
 //////////////////////////////////////
 
-.canhcam-form-1
-	+pad(2rem 0)
-	+media-breakpoint-up(lg)
-		+pad(4rem 0)
+.canhcam-footer-1
+	border-top: 3px solid color-get($mau, main)
+	.top-footer
+		+pad(3rem 0)
+		+media-breakpoint-up(lg)
+			+pad(r(70px) 0)
 	.info
-		h3
-			+fz(1.3rem)
+		h2
+			+fz(r(46px))
+			+fw(300)
+			margin-bottom: 2rem
 			text-transform: uppercase
-		.inf
-			+pad(2rem)
-			h2
-				+fz(1.3rem)
-	form
-		.help-block
-			ul
+		h3
+			+fz(r(15px))
+			text-transform: uppercase
+			+fw(600)
+		p
+			color-get($mau,den-5)
+			margin-bottom: 2rem
+		a
+			+fz(r(15px))
+	.wrap-contact
+		display: flex
+		flex-direction: column
+		flex-wrap: wrap
+		+media-breakpoint-up(md)
+			height: 350px
+		.form-group
+			margin-bottom: r(25px)
+			textarea.form-control
+				height: 185px
+				margin-bottom: 25px
+			.form-control
+				height: r(45px)
+				line-height: r(45px)
+				+bor-rad(0)
+				+pad(0 r(23px))
+			&:last-child, &:nth-child(6)
+				+media-breakpoint-up(md)
+					margin-left: 30px
+			&:last-child
+				display: flex
+				flex-direction: column
+				align-items: center
+				+media-breakpoint-up(md)
+					align-items: flex-end
+			.notice
+				+fz(r(15px))
+				color: color-get($mau, den-5)
+				height: r(45px)
 				margin-bottom: 0
-				+fz(.9rem)
-				color: color-get($mau,do-1)
+			button.btn
+				+lh(r(45px))
+				height: r(45px)
+				background: none
+				+bor-rad(0)
+				+pad(0 2rem)
+				border: 1px solid #ced4da
+				&:after
+					content: '\e87a'
+					font-family: 'Linearicons-Free'
+					+fz(r(18px))
+					margin-left: .75rem
+					vertical-align:  bottom
+			+media-breakpoint-up(md)
+				width: calc(50% - 15px)
+	.copyright
+		background: #3c3c3c
+		.text
+			+pad(1rem 0)
+			display: flex
+			align-items: center
+			justify-content: center
+			+media-breakpoint-up(lg)
+				+pad(0)
+				height: 50px
+				justify-content: flex-start
+			p
+				color: white
+				text-transform: uppercase
+				+fz(r(12px))
+				margin-bottom: 0
+				text-align: center
+				+media-breakpoint-up(lg)
+					text-align: left
+		ul
+			height: 100%
+			display: flex
+			align-items: center
+			margin-bottom: 0
+			justify-content: center
+			+media-breakpoint-up(lg)
+				justify-content: flex-start
+			.nav-item
+				.nav-link
+					+fz(r(12px))
+					color: white
+					text-transform: uppercase
+					+lh(r(50px))
+					+pad(0 r(15px))
+					span
+						+fz(r(18px))
+		.sitemap
+			ul
+				flex-direction: column
+				+media-breakpoint-up(sm)
+					flex-direction: row
+				.nav-item
+					+media-breakpoint-up(sm)
+						+ .nav-item
+							position: relative
+							&:before
+								content: ''
+								height: 1rem
+								width: 2px
+								+pos(abs,50% null null -1px)
+								background: white
+								transform: translateY(-50%)
