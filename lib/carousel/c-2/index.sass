@@ -1,0 +1,99 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-carousel-2
+	.item
+		figure
+			position: relative
+			img
+				width: 100%
+			figcaption
+				.day
+					+pos(abs, 20px null null 0)
+					height: 57px
+					width: 76px
+					background: color-rgba(color-get($mau,main),.9)
+					text-align: center
+					p,time
+						color: color-get($mau, trang)
+					p
+						+fz(r(24px))
+						+mar(0)
+					time
+						+fz(r(14px))
+						position: relative
+						&:before
+							content: ""
+							background: color-get($mau, trang)
+							width: 100%
+							height: 1px
+							+pos(abs, -5px null null 0)
+				h3
+					text-align: center
+					+pad(1rem 2rem)
+					+fw(initial)
+					+lh(r(24px))
+					display: -webkit-box
+					-webkit-line-clamp: 3
+					-webkit-box-orient: vertical
+					+media-breakpoint-up(lg)
+						+fz(r(16px))
+	.owl-carousel
+		position: relative
+		// Main
+		.owl-stage-outer
+		// Nav
+		.owl-nav
+			button
+				&.owl-prev, &.owl-next
+					+pad(.5rem_)
+					width: 3rem
+					height: 3rem
+					+bor-rad(50%)
+					text-align: center
+					&:focus
+						outline: none
+				&:hover, &.active
+					&.owl-prev, &.owl-next
+						background: color-get($mau,main)
+			+media-breakpoint-up(md)
+				margin-top: 0
+				button
+					color: color-get($mau, trang)
+					&.owl-prev, &.owl-next
+						margin: 0
+						+transform(translateY(-50%))
+						&:focus
+							outline: none
+					&.owl-prev
+						+pos(abs, 35% null null -1rem)
+					&.owl-next
+						+pos(abs, 35% -1rem null null)
+		// Dots
+		.owl-dots
+			.owl-dot
+				&:focus
+					outline: none
+				span
+					background: darken(color-get($mau,trang),5%)
+				&.active
+					span
+						background: color-get($mau,main)
+		// List
+		&.list-items
+			.item
+				a
+					color: darken(color-get($mau,trang),50%)
+					text-decoration: none
+					.price
+						color: color-get($mau,do-1)
+						+fw(bold)
+				&:hover
+					img
+						+opacity(.8)
+					a
+						color: color-get($mau,den)
+					h3
+						text-decoration: underline
