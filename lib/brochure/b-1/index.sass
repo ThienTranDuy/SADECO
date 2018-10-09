@@ -1,0 +1,36 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-brochure-b-1
+	+fw(400)
+	+mrc-padding
+	color: color-get($mau, den-1)
+	.title
+		margin-bottom: 1rem
+		+media-breakpoint-down(md)
+			+mar(2rem 0)
+	.calendar
+		+pad(.5rem 0)
+		border-bottom: 1px dashed color-get($mau, den-3)
+	h2
+		text-transform: uppercase
+		+fw(initial)
+		+fz(r(30px))
+		margin-bottom: 1re	m
+		+media-breakpoint-up(lg)
+	table
+		thead
+			background: color-get($mau, den-1)
+			th
+				+fz(400)
+				text-transform: uppercase
+				+fz(r(16px))
+				color: color-get($mau, tramg)
+		i
+			color: color-get($mau, extra)
+		td
+			+fz(400)
+			+fz(r(15px))
+			color: color-get($mau, den-1)

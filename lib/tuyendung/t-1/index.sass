@@ -1,0 +1,31 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-tuyendung-1
+	+fw(400)
+	+mrc-padding
+	color: color-get($mau, den-1)
+	h2
+		text-align: center
+		+fw(initial)
+		+fz(1.5rem)
+		+lh(r(48px))
+		text-transform: uppercase
+		margin-bottom: 1rem
+		+media-breakpoint-up(lg)
+			+fz(r(40px))
+			+lh(r(40px))
+			margin-bottom: 2rem
+	h3
+		+fz(r(30px))
+		+lh(r(30px))
+	figure
+		img
+			width: 100%
+	.content
+		+media-breakpoint-up(lg)
+			margin-top: 2rem
+		p
+			+fz(r(15px))

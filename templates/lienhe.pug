@@ -4,9 +4,11 @@ block variables
 	- var description = "Description for lienhe page"
 	- var bodyclass = "lienhe"
 	- var href = "/lienhe.html"
-//- block header
-//- 	include ../lib/header/h-1/index.pug
+block header
+	include ../lib/header/h-1/index.pug
+	include ../lib/breadcrumb/b-1/index.pug
+	include ../lib/header/h-2/index.pug
 block body
 	include ../lib/lienhe/l-1/index.pug
-//- block footer
-//- 	include ../lib/footer/f-1/index.pug
+block footer
+	include ../lib/footer/f-1/index.pug

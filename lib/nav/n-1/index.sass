@@ -11,13 +11,22 @@
 				background: color-get($mau, xam-5)
 				+pos(abs, null 0 0 null)
 			a
+				+pad(1rem 2rem)
 				+fw(500)
 				+fz(r(15px))
 				color: color-get($mau, den-1)
+				border-bottom: 1px solid #f2f2f2
 			.mdi
 				color: color-get($mau, extra)
-		li.active
+		.active, &:active
 			background: color-get($mau, extra)
+			a
+				color: color-get($mau, trang)
+			.mdi
+				color: color-get($mau, trang)
+		+media-breakpoint-up(md)
+			&:hover
+				background: color-get($mau, extra)
 			a
 				color: color-get($mau, trang)
 			.mdi
