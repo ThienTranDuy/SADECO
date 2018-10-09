@@ -6,56 +6,35 @@
 .canhcam-breadcrumb-1
 	position: relative
 	.main-breadcrumb
-		position: absolute
-		bottom: 0
-		left: 0
+		+pos(abs, 0 null null 0)
 		width: 100%
-		display: none
-		z-index: 100
-		+media-breakpoint-up(md)
-			display: block
-		.breadcrumb
-			margin-bottom: 0
-			+bor-rad(0)
-			+pad(0)
-			position: relative
-			background: none
-			+opacity(.8)
-			&:before
-				content: ''
-				display: block
-				min-width: 1000px
-				height: 2.5rem
-				background: color-get($mau,main)
-				+pos(abs, 0 100% null null)
-			.breadcrumb-item
-				background: color-get($mau,main)
-				+pad(.5rem)
-				position: relative
-				line-height: 1.5rem
-				color: color-get($mau,trang)
-				display: flex
-				align-items: center
-				&:first-child
-					padding-left: 0
-				a
-					color: color-get($mau,trang)
-				+ .breadcrumb-item
-					&:before
-						color: color-get($mau,trang)
-						content: '\e876'
-						font-family: 'Linearicons-Free'
-						line-height: 1
-						overflow: hidden
-				&:last-child
-					&:after
-						content: ''
-						display: inline-block
-						width: 0
-						height: 0
-						border-bottom: 2.5rem solid color-get($mau,main)
-						border-right: 2.5rem solid transparent
-						+pos(abs, 0 -2.5rem null null)
+		height: 100%
+		z-index: 10
+		.container
+			+pos(abs, 50% null null 50%)
+			transform: translateX(-50%)
+		.breadcrumb-wrap
+			+pos(abs,50% null null 15px)
+			z-index: 50
+			background: color-rgba(lighten(color-get($mau,den),20%),.5)
+			+pad(1.5rem 1rem)
+			.breadcrumb
+				background: none
+				+pad(0)
+				margin-bottom: 0
+				.breadcrumb-item
+					a
+						+fz(1rem)
+						color: white
+					+ .breadcrumb-item
+						&:before
+							content: '\e876'
+							font-family: 'Linearicons-Free'
+							color: white
+			h2
+				+fz(2rem)
+				text-transform: uppercase
+				color: white
 	.owl-carousel
 		position: relative
 
