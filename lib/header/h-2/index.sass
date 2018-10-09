@@ -56,13 +56,14 @@
 	+media-breakpoint-up(lg)
 		.nav
 			flex-direction: row
+			justify-content: space-between
 			.nav-item
 				.nav-link
 					display: block
 					+fz(1rem)
 					color: color-get($mau, trang)
 					text-align: center
-					+pad(18px 30px)
+					+pad(1rem 1.2rem)
 				&.active, &:hover
 					.nav-link
 						background: color-get($mau, main)
