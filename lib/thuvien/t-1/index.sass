@@ -19,26 +19,29 @@
 				+mar(0)
 				height: 100%
 				position: relative
+				+transition(all .5s ease-in-out)
 				&:before
 					background: url(../img/sadeco/thuvien/t_3.png) no-repeat center center !important
 					content: ""
 					+pos(abs, 0 0 null null)
 					width: 100%
 					height: 100%
+					+transition(all .5s ease-in-out)
 				&:after
 					content: ""
 					background: rgba(0, 0, 0, 0.5)
 					+pos(abs, 0 null null 0)
 					width: 100%
 					height: 100%
+					+transition(all .5s ease-in-out)
 				&:active
 					&:before
 						display: none
 					&:after
-					background: rgba(0,0,0,.5)
-					background: -moz-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.65) 100%)
-					background: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%,rgba(0,0,0,0.65) 100%)
-					background: linear-gradient(to bottom, rgba(0,0,0,0) 50%,rgba(0,0,0,0.65) 100%)
+						background: rgba(0,0,0,.5)
+						background: -moz-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.65) 100%)
+						background: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%,rgba(0,0,0,0.65) 100%)
+						background: linear-gradient(to bottom, rgba(0,0,0,0) 50%,rgba(0,0,0,0.65) 100%)
 					figcaption
 						display: block
 				+media-breakpoint-up(md)
@@ -53,6 +56,7 @@
 						figcaption
 							display: block
 				figcaption
+					+transition(all .5s ease-in-out)
 					display: none
 					h3
 						width: 100%

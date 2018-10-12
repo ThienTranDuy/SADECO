@@ -2,7 +2,8 @@
     "SETUP": {
         "index": {
             "header": [
-                "header/h-1",
+				"header/h-1",
+				"banner/b-1",
                 "header/h-2"
             ],
             "body": [
@@ -12,7 +13,6 @@
                 "index/i-4",
                 "tabs/t-1",
                 "tabs/t-2",
-                "banner/b-1",
                 "breadcrumb/b-1",
                 "nav/n-2",
                 "index/i-1",
@@ -29,7 +29,8 @@
             ],
             "body": [
                 "gioithieu/g-1",
-                "gioithieu/g-2",
+				"gioithieu/g-2",
+				"gioithieu/g-3",
                 "nav/n-1"
             ],
             "footer": [
@@ -100,7 +101,7 @@
 				"footer/f-1"
 			]
         },
-		"cocautochuc": {
+		"duan-ct": {
             "header": [
                 "header/h-1",
                 "header/h-2"
@@ -240,6 +241,7 @@
                 "header/h-2"
             ],
             "body": [
+				"nav/n-3",
                 "brochure/b-1"
             ],
             "footer": [

@@ -1,21 +1,24 @@
 @import ../../_includes
-article.intro-2
+article.intro-3
 	+fw(400)
-	color: color-get($mau, den-1)
+	color: color-get($mau, trang)
 	+mrc-padding
 	+media-breakpoint-up(lg)
 		text-align: left
 	h2
 		+fz(1.5rem)
 		text-transform: uppercase
+		color: color-get($mau, trang)
 		+media-breakpoint-up(lg)
 			+fz(r(40px))
 			margin-bottom: 2rem
 	p
+		color: color-get($mau, trang)
 		+fz(r(15px))
 	ul
 		+pad(0)
 		li
+			color: color-get($mau, trang)
 			+pad(null null null 1rem)
 			list-style: none
 			position: relative
@@ -33,15 +36,33 @@ article.intro-2
 				outline: 0
 			figure
 				background: color-get($mau, trang)
-				display: flex
-				flex-direction: column
 				+pad(1rem)
-				+media-breakpoint-up(md)
-					flex-direction: row
-				img
+				.block
+					display: flex
+					justify-content: center
+					align-items: center
+					text-align: center
 					width: 100%
+					img
+						border: 5px solid color-get($mau, vang-3)
+						box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25)
+						+transition(all .5s ease-in-out)
+						+pad(1rem 3rem)
+						// -webkit-border-image: url("./img/sadeco/gioithieu/g_4.png") 19/19px round
+						&:active
+							border-color: color-get($mau, extra)
+						+media-breakpoint-up(lg)
+							+pad(.2rem 1rem)
+							&:hover
+								border-color: color-get($mau, extra)
 				figcaption
-					padding-left: 1rem
+					padding-top: 1rem
+					p
+						+fz(1rem)
+						text-align: center
+						color: color-get($mau, den-1)
+						+media-breakpoint-up(md)
+							+fz(r(10px))
 		.slick-prev,.slick-next
 			top: 50%
 		.nav
@@ -91,6 +112,7 @@ article.intro-2
 				+pad(null 4rem 1rem 4rem)
 				+bor-rad(100px)
 				h4
+					+fz(r(10.38px))
 					color: color-get($mau,den-1)
 					+pad(.3rem .6rem)
 					border-radius: 5px
@@ -160,3 +182,16 @@ article.intro-2
 			&:hover
 				background: color-get($mau,main)
 				color: color-get($mau,trang)
+		+media-breakpoint-up(lg)
+			margin-top: -3rem
+			.content
+				+pad(1rem null 3rem)
+				.text
+					margin: auto
+					max-width: 70%
+					h3
+						font-size: 1.7rem
+					p
+						+fz(1.2rem)
+			.slick-arrow
+				display: none

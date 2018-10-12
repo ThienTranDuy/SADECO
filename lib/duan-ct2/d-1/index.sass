@@ -8,9 +8,9 @@
 		text-transform: uppercase
 	h2
 		text-align: center
-		+fw(initial)
+		+fw(600)
 		+fz(1.5rem)
-		margin-bottom: .5rem
+		margin-bottom: 1rem
 		+media-breakpoint-up(lg)
 			+fz(r(40px))
 			margin-bottom: 1rem
@@ -19,3 +19,7 @@
 	p
 		+fw(1rem)
 		+lh(r(20px))
+	.col20
+		+media-breakpoint-up(lg)
+			width: 20% !important
+			padding: (0 15px) !important

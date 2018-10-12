@@ -20,13 +20,17 @@
 				+media-breakpoint-up(lg)
 					min-height: 380px
 				.title
-					+pos(abs, null null 3rem 0)
+					+pos(abs, 40% null null 0)
 					text-align: center
 					width: 100%
 					+pad(0 1rem)
 					h1
+						+fz(r(34px))
+						text-transform: uppercase
 						color: color-get($mau,trang)
 						+text-sha(1px 1px 3px rgba(0,0,0,.4))
+						+media-breakpoint-down(md)
+							+fz(2rem)
 					p
 						color: color-get($mau,trang)
 						+text-sha(2px 2px 3px rgba(0,0,0,.2))
@@ -36,6 +40,27 @@
 						+media-breakpoint-up(md)
 							max-width: 50%
 							margin: 0 auto 1rem auto
+				.go-down
+					outline: 0
+					display: flex
+					justify-content: center
+					align-content: 
+					text-align: center
+					width: 30px
+					height: 30px
+					border-radius: 50%
+					background-color: rgb(0, 0, 0)
+					opacity: 0.702
+					box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.28)
+					+pos(abs, null null 5% 50%)
+					cursor: pointer
+					span
+						outline: 0
+						color: color-get($mau,trang)
+						fz(r(30px))
+						justify-content: center
+						align-items: center
+						display: flex
 		// Arrow
 		.slick-arrow
 			background: rgba(0,0,0,.3)
@@ -86,5 +111,3 @@
 					button
 						&:before
 							background: color-get($mau,main)
-
-	

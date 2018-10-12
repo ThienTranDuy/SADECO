@@ -5,17 +5,19 @@
 	color: color-get($mau, den-1)
 	h2
 		text-transform: uppercase
-		+fw(initial)
+		+fw(600)
 		+fz(1.5rem)
 		text-align: center
-		margin-bottom: .5rem
+		margin-bottom: -.5rem
 		+media-breakpoint-up(lg)
 			+fz(r(40px))
-			margin-bottom: 1rem
+			margin-bottom: 2rem
 	.item
 		+mar(1.5rem null .5rem)
 		figure
 			position: relative
+			+media-breakpoint-down(md)
+				margin-bottom: -1rem
 			img
 				width: 100%
 			figcaption

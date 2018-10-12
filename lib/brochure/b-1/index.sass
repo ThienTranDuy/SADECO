@@ -7,30 +7,39 @@
 	+fw(400)
 	+mrc-padding
 	color: color-get($mau, den-1)
-	.title
-		margin-bottom: 1rem
-		+media-breakpoint-down(md)
-			+mar(2rem 0)
-	.calendar
-		+pad(.5rem 0)
-		border-bottom: 1px dashed color-get($mau, den-3)
-	h2
-		text-transform: uppercase
-		+fw(initial)
-		+fz(r(30px))
-		margin-bottom: 1re	m
+	article
+		padding-bottom: 0rem
 		+media-breakpoint-up(lg)
+			padding-bottom: 2rem
+	h1,h2
+		+fw(600)
+		+fz(r(30px))
+		text-transform: uppercase
+		text-align: center
+		+mar(2rem null 1rem null)
+		+media-breakpoint-up(lg)
+			+mar(0 null 2rem null)
+			text-align: left
+	i
+		color: color-get($mau, extra)
 	table
 		thead
 			background: color-get($mau, den-1)
 			th
 				+fz(400)
-				text-transform: uppercase
 				+fz(r(16px))
+				text-transform: uppercase
 				color: color-get($mau, tramg)
-		i
-			color: color-get($mau, extra)
-		td
-			+fz(400)
-			+fz(r(15px))
-			color: color-get($mau, den-1)
+				vertical-align: top
+				text-align: center
+				+media-breakpoint-up(md)
+					vertical-align: middle
+					text-align: left
+					+pad(null 2.2rem)
+		tbody
+			td
+				+fz(400)
+				+fz(r(15px))
+				color: color-get($mau, den-1)
+				+media-breakpoint-up(md)
+					+pad(null 2.2rem)

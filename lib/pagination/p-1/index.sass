@@ -21,6 +21,7 @@
 				&:first-child
 					margin-left: 0
 				.page-link
+					outline: none !important
 					border-radius: 0 !important
 					border: none
 					width: r(29px)
@@ -31,8 +32,11 @@
 					background: darken(color-get($mau,trang) ,20%)
 					color: color-get($mau,trang)
 					+transition(all .3s ease-in-out)
+					&:focus
+						outline: 0 !important
 					&:active
 						background: color-get($mau,extra) !important
+						outline: none !important
 					+media-breakpoint-up(lg)
 						&:hover
 							background: color-get($mau,extra)

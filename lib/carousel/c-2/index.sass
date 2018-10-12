@@ -46,6 +46,8 @@
 		.owl-stage-outer
 		// Nav
 		.owl-nav
+			+media-breakpoint-down(md)
+				+mar(0 0 1rem 0)
 			button
 				&.owl-prev, &.owl-next
 					+pad(.5rem_)
@@ -55,7 +57,7 @@
 					text-align: center
 					&:focus
 						outline: none
-				&:hover, &.active
+				&.active
 					&.owl-prev, &.owl-next
 						background: color-get($mau,main)
 			+media-breakpoint-up(md)
@@ -90,10 +92,3 @@
 					.price
 						color: color-get($mau,do-1)
 						+fw(bold)
-				&:hover
-					img
-						+opacity(.8)
-					a
-						color: color-get($mau,den)
-					h3
-						text-decoration: underline

@@ -56,35 +56,32 @@
 				+lh(r(24px))
 				color: color-get($mau,xam-6)
 		.item
-		+mar(1.5rem null .5rem)
-		figure
-			position: relative
-			+pad(1rem 0)
-			border-bottom: 1px solid color-get($mau, xam-5)
-			img
-				width: 100%
-			figcaption
-				+pad(1rem 1.5rem)
-				.day
-					+pos(abs, 20px null null 0)
-					height: 57px
-					width: 76px
-					background: color-rgba(color-get($mau,main),.9)
-					p,time
-						color: color-get($mau, trang)
-					p
-						+fz(r(24px))
-						+mar(0)
-						text-align: center !important
-					time
-						+fz(r(14px))
-						position: relative
-						&:before
-							content: ""
-							background: color-get($mau, trang)
-							width: 100%
-							height: 1px
-							+pos(abs, -5px null null 0)
-				h3
-					+fz(r(16px))
-					text-align: center
+			figure
+				position: relative
+				img
+					width: 100%
+				figcaption
+					+pad(1rem 1.5rem)
+					.day
+						+pos(abs, 20px null null 0)
+						height: 57px
+						width: 76px
+						background: color-rgba(color-get($mau,main),.9)
+						p,time
+							color: color-get($mau, trang)
+						p
+							+fz(r(24px))
+							+mar(0)
+							text-align: center !important
+						time
+							+fz(r(14px))
+							position: relative
+							&:before
+								content: ""
+								background: color-get($mau, trang)
+								width: 100%
+								height: 1px
+								+pos(abs, -5px null null 0)
+					h3
+						+fz(r(16px))
+						text-align: center

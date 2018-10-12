@@ -4,17 +4,19 @@
 //////////////////////////////////////
 
 .canhcam-intro-slider-5
-	padding: 2rem 0 4rem
-	+media-breakpoint-up(lg)
-		padding: 2rem 0 4rem
+	+fw(400)
+	margin-bottom: 2rem
+	color: color-get($mau, den-1)
 	h2
-		+fz(r(30px))
-		text-align: center
 		text-transform: uppercase
-		color: color-get($mau, main)
-		margin-bottom: 2rem
+	h2
+		+fw(600)
+		+fz(1.5rem)
+		text-align: center
+		margin-bottom: 1rem
 		+media-breakpoint-up(lg)
-			margin-bottom: r(44px)
+			+fz(r(40px))
+			margin-bottom: 2rem
 	.list-thumb
 		.slick-current.slick-active.slick-center
 			z-index: 99

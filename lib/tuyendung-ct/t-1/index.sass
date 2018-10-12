@@ -15,7 +15,7 @@
 		+pad(.5rem 0)
 		border-bottom: 1px dashed color-get($mau, den-3)
 	h2
-		+fw(initial)
+		+fw(600)
 		+fz(r(30px))
 		margin-bottom: 1rem
 		+media-breakpoint-up(lg)
@@ -65,13 +65,28 @@
 			th,td
 				border: none
 				+fw(400)
-	a.btn-z
-		color: color-get($mau, trang)
+	a.btn-ungtuyen
+		color: color-get($mau, trang) !important
 		text-transform: uppercase
-		+pad(16px 22px)
-		+fz(r(16px))
 		text-align: center
-	a.btn-z-1
-		background: color-get($mau, main) !important
-	a.btn-z-2
-		background: color-get($mau, extra) !important
+		max-height: 50px
+		display: flex
+		justify-content: center
+		align-items: center
+		text-align: center
+		+fz(r(16px))
+	a.btn-ungtuyen-1
+		+pad(1rem)
+		+mar(1rem 1rem 0 0)
+		width: 240px
+		background: color-get($mau, main)
+	a.btn-ungtuyen-2
+		+pad(1rem)
+		+mar(1rem 1rem 0 0)
+		width: 240px
+		flex-direction: column
+		background: color-get($mau, extra)
+		.small
+			font-size: r(12px) !important
+			text-transform: none
+

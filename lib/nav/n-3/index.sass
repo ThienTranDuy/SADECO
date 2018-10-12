@@ -4,21 +4,38 @@
 		flex-direction: column
 		li
 			background: color-get($mau, trang)
-			&:after
-				content: ""
-				width: 100%
-				height: 1px
-				background: color-get($mau, xam-5)
-				+pos(abs, null 0 0 null)
+			position: relative
+			+transition(all .3s ease-in-out)
 			a
+				+pad(.8rem 2.5rem)
 				+fw(500)
 				+fz(r(15px))
 				color: color-get($mau, den-1)
-			.mdi
+				border-bottom: 1px solid #f2f2f2
+				cursor: pointer
+			&:before
+				+fz(r(10px))
+				content: "\e876"
+				font-family: 'Linearicons-Free'
+				width: 100%
+				+pos(abs, 1rem null null 1.5rem)
 				color: color-get($mau, extra)
-		li.active
+			&:active
+				background: color-get($mau, extra)
+				a
+					color: color-get($mau, trang)
+				&:before
+					color: color-get($mau, trang)
+			+media-breakpoint-up(lg)			
+				&:hover
+					background: color-get($mau, extra)
+					a
+						color: color-get($mau, trang)
+					&:before
+						color: color-get($mau, trang)
+		.active
 			background: color-get($mau, extra)
 			a
 				color: color-get($mau, trang)
-			.mdi
+			&:before
 				color: color-get($mau, trang)
